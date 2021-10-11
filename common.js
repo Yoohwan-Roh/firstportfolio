@@ -1,4 +1,4 @@
-// // gnb 마우스 호버
+// gnb 마우스 호버
 // $(".smallNav").hide();
 // $(".bigNav > li").on('mouseenter', function() {
 //   $(".bigNav > li").not($(this)).children('a').css({ color: "#fff" })
@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false,
         },
         pagination: {

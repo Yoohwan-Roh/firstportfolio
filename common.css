@@ -7,7 +7,7 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none; color: #0;
+  text-decoration: none; color: #000;
 }
 .hidden {
   position: absolute;
@@ -36,9 +36,9 @@ html,body {
 #gnb {
   position: absolute;
   top: 0; left: 0;
-  width: 500px; height: 100vh;
+  width: 15%; height: 100vh;
   background: rgba(0, 0, 0, 0.4);
-  display: none;
+  /* display: none; */
 }
 #gnb .togBtn {
   position: absolute;
@@ -113,8 +113,8 @@ html,body {
 }
 /* swiper plugin */
 .swiper {
-  width: 100%;
-  height: 50vh;
+  width: 70%;
+  height: 70vh;
 }
 
 .swiper-slide {
@@ -143,27 +143,48 @@ html,body {
   height: 100%;
   object-fit: cover;
 }
+.swiper-slide::before {
+  content: "";
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 70vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.swiper-slide p {
+  position: relative; text-transform: uppercase; padding: 70px 0 30px;
+  color: #ffffff; font-size: 50px; font-weight: bold;
+  text-shadow: 0 2px 2px #000;
+}
 
+.slide0 {
+  background: url(images/slide0.jpg) no-repeat center center / cover;
+  /* text-indent: -99999px; */
+}
 .slide1 {
-  background: url(images/climate.jpg) no-repeat center center / contain;
-  text-indent: -99999px;
+  background: url(images/slide1.jpg) no-repeat center center / cover;
+  /* text-indent: -99999px; */
 }
 .slide2 {
-  background: url(images/climate2.jpg) no-repeat center center / contain;
-  text-indent: -99999px;
+  background: url(images/slide2.jpg) no-repeat top center / cover;
+  /* text-indent: -99999px; */
 }
 .slide3 {
-  background: url(images/climate3.jpg) no-repeat center center / contain;
-  text-indent: -99999px;
+  background: url(images/slide3.jpg) no-repeat center center / cover;
+  /* text-indent: -99999px; */
 }
 .slide4 {
-  background: url(images/climate4.jpg) no-repeat center center / contain;
-  text-indent: -99999px;
+  background: url(images/slide4.jpg) no-repeat center center / cover;
+  /* text-indent: -99999px; */
 }
 /* searchBox */
 .searchBox {
   width: 100%; height: 200px;
-  margin: 10px auto;
   border: 1px solid #000;
   text-align: center;
 }
+.mainSearch {
+  width: 400px; height: 50px;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+/* qckWrap */
