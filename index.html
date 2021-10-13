@@ -2,13 +2,14 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>쓰레기 백과사전</title>
+    <title>recycloud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="jquery-3.6.0.min.js" charset="utf-8"></script>
     <script src="common.js" defer charset="utf-8"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="prefixfree.min.js"></script>
   </head>
   <body>
     <header id="header">
@@ -16,7 +17,7 @@
         <a href="#">recycloud</a>
       </h1>
       <nav id="snb">
-        <h2 class="hidden">searchbox inside the page and contact us</h2>
+        <h2 class="hidden">사이트 내 검색 그리고 contact us</h2>
         <ul>
           <li>
             <form class="snbSearchBox">
@@ -26,11 +27,11 @@
               </div>
             </form>
           </li>
-          <li class="contact"><a href="#">contact us</a></li>
+          <li class="contact"><a href="#">&#9993;contact us</a></li>
         </ul>
       </nav>
       <nav id="gnb">
-        <h2 class="hidden">recycloud main menu</h2>
+        <h2 class="hidden">recycloud 메인 네비게이션</h2>
         <div class="togBtn"></div>
         <ul class="bigNav">
           <li class="nav nav1">
@@ -105,7 +106,7 @@
       <div class="searchBox">
         <p>배출하려는 물품의 분리배출 방법을 찾아보세요</p>
         <form>
-          <input type="search" class="mainSearch">
+          <input type="search" class="mainSearch" placeholder="예)우산, 형광등, 프링글스 등">
           <div class="mainSubmit">
             <a href="#">검색</a>
           </div>
@@ -117,36 +118,58 @@
       <p>궁금하신 물품을 선택하세요</p>
       <div class="qckIcon">
         <div class="icon1">
+          <div class="qckHover"></div>
           <a href="#">일반쓰레기</a>
+          <p>일반쓰레기</p>
         </div>
         <div class="icon2">
+          <div class="qckHover"></div>
           <a href="#">폐건전지</a>
+          <p>폐건전지</p>
         </div>
         <div class="icon3">
-          <a href="#">종이</a>
+          <div class="qckHover"></div>
+          <a href="#">종이류</a>
+          <p>종이류</p>
         </div>
         <div class="icon4">
+          <div class="qckHover"></div>
           <a href="#">의류</a>
+          <p>의류</p>
         </div>
         <div class="icon5">
+          <div class="qckHover"></div>
           <a href="#">음식물쓰레기</a>
+          <p>음식물쓰레기</p>
         </div>
         <div class="icon6">
+          <div class="qckHover"></div>
           <a href="#">대형폐기물</a>
+          <p>대형폐기물</p>
         </div>
         <div class="icon7">
+          <div class="qckHover"></div>
           <a href="#">플라스틱</a>
+          <p>플라스틱</p>
         </div>
         <div class="icon8">
+          <div class="qckHover"></div>
           <a href="#">병류</a>
+          <p>병류</p>
         </div>
       </div>
     </section>
     <section id="subContent">
       <h2 class="hidden">등록된 쓰레기 개수와 실시간 인기 쓰레기</h2>
       <div class="summary">
-        <h3>검색가능한 쓰레기 종류</h3>
-        <p>1</p>
+        <div class="total">
+          <h3>검색가능한 쓰레기 종류</h3>
+          <p class="counting">1</p>
+        </div>
+        <div class="new">
+          <h3>새로 등록된 쓰레기</h3>
+          <p class="counting2">1</p>
+        </div>
       </div>
       <div class="ranking">
         <h3>실시간 인기 쓰레기</h3>
@@ -184,5 +207,23 @@
         </ol>
       </div>
     </section>
+    <div class="topBtn">
+      <a href="#">top</a>
+    </div>
+    <footer id="footer">
+      <h2>
+        <a href="#">footer logo</a>
+      </h2>
+      <div id="infoWrap">
+        <div class="info">
+          <small class="copyright">copyright &copy; 2021 recycloud. all rights reserved</small>
+          <address>e-mail : recycloudadmin@gmail.com</address>
+        </div>
+        <ul class="sns">
+          <li class="instagram"><a href="#">인스타그램 바로가기</a></li>
+          <li class="youtube"><a href="#">유튜브 바로가기</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
