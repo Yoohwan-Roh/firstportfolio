@@ -98,7 +98,23 @@ let counting2 = () => {
 }
 
 //인기검색어
-$(".ranking ol li").hide();
-$(".ranking ol li").each(function() {
-  $(this).slideDown();
+let timer = 700;
+let rankSlide = () => {
+  $(".ranking ol li").each(function() {
+    $(".ranking ol li").hide();
+    $(this).delay($(this).index()*timer).slideDown();
+  })
+}
+rankSlide();
+setInterval(rankSlide, 8000);
+
+//contact us 호버
+$(".contact").mouseenter(function() {
+  $(this).css({ background: "#000"})
+  $(this).children('a').css({ color: "#fff", fontSize: "18px"})
+  $(this).children('a').innerText("&#9993");
+})
+$(".contact").mouseleave(function() {
+  $(this).css({ background: "#fff"})
+  $(this).children('a').css({ color: "#000", fontSize: "16px"})
 })
